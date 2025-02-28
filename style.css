@@ -1,0 +1,162 @@
+/* Fonts added */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Common styles  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(15deg, #00ff7b, #ffbf00);
+    color: #0d0c0c;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    padding-bottom: 10px;
+    border-bottom: 3px solid #fff;
+}
+
+/* Form Section */
+section {
+    width: 90%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Input Fields */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+}
+
+input:focus {
+    border: 2px solid #0072ff;
+}
+
+/* Submit Button */
+button {
+    background: #ff4b5c;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background: #ff2e44;
+}
+
+/* Table Section */
+#StudList {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    
+}
+
+th {
+    background: #ff4b5c;
+    color: rgb(5, 5, 5);
+}
+
+td {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Buttons inside the table */
+button.delete {
+    background: red;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+button.edit {
+    background: green;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+/* Responsiveness for better look */
+@media (max-width: 768px) {
+    section {
+        width: 95%;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+/* Table Section */
+#StudList {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    overflow-x: auto;
+}
+
+/* Scroll Bar */
+#ScrollBar {
+    max-height: 300px; 
+    overflow-y: auto; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}

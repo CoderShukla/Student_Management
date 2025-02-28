@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentForm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header  -->
+    <header>
+        <h1>Student Records Management System </h1>
+        <p>Where Student can add their details and modify and delete their records as per the requirement.</p>
+    </header>
+<!--  Main Area Starts -->
+    <main>
+        <section>
+            <!-- Section for the Student Details form  -->
+            <h2>Students Details</h2>
+            <form id="StudForm">
+                <label for="student-name">Student Name:</label>
+                <input type="text" id="StudName" name="student-name" required>
+
+                <label for="student-id">Student ID:</label>
+                <input type="number" id="StudID" name="student-id" required>
+
+                <label for="email-id">Email ID:</label>
+                <input type="email" id="EmailID" name="email-id" required>
+
+                <label for="contact-no">Contact No:</label>
+                <input type="number" id="TelNo" name="contact-no" required>
+
+                <button type="submit" id="submit-btn">Add Student</button>
+            </form>
+        </section>
+<!--  Section for the student Table -->
+        <section id="StudList">
+            <h2>Registered Students</h2>
+            <div id="ScrollBar">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Student ID</th>
+                        <th>Email</th>
+                        <th>Contact No</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="add"></tbody>
+                </tbody>
+            </table>
+        </div>
+        </section>
+    </main>
+
+    <script src="file.js"></script>
+</body>
+
+</html>
